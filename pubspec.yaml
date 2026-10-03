@@ -1,0 +1,70 @@
+# pubspec.yaml
+# CamScaner by Chương v1 — Phần mềm PDF miễn phí cho cộng đồng
+# Tác giả: Chương
+# Miễn phí 100% — Không quảng cáo — Không thu phí — Offline hoàn toàn
+name: camscaner_by_chuong_v1
+description: "CamScaner by Chương — Phần mềm PDF miễn phí cho giáo viên, phụ huynh và cộng đồng"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+  # Xử lý PDF
+  syncfusion_flutter_pdf: ^26.1.39
+  syncfusion_flutter_pdfviewer: ^26.1.39
+  pdfx: ^2.6.0
+
+  # Desktop
+  desktop_drop: ^0.4.4
+  file_picker: ^8.0.0
+  file_selector: ^1.0.3
+  window_manager: ^0.3.9
+
+  # Server nhận file qua WiFi (LAN nội bộ)
+  shelf: ^1.4.1
+  shelf_router: ^1.1.4
+  qr_flutter: ^4.1.0
+  network_info_plus: ^5.0.3
+
+  # Tiện ích
+  printing: ^5.12.0
+  provider: ^6.1.2
+  shared_preferences: ^2.2.3
+  path_provider: ^2.1.3
+  path: ^1.9.0
+  mime: ^1.0.5
+  uuid: ^4.4.0
+  intl: ^0.19.0
+  url_launcher: ^6.2.6
+  reorderable_grid_view: ^2.2.8
+  flutter_colorpicker: ^1.1.0
+  image: ^4.1.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icon/
+
+flutter_launcher_icons:
+  windows:
+    generate: true
+    image_path: "assets/icon/icon.png"
+    icon_size: 256
+  macos:
+    generate: true
+    image_path: "assets/icon/icon.png"
+  linux:
+    generate: true
+    image_path: "assets/icon/icon.png"
